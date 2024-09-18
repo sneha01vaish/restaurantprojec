@@ -1,0 +1,129 @@
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 0 !important;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  position: static !important;
+  transform: none !important;
+  background: transparent;
+  border: none;
+}
+
+/* .sidebar ul li {
+  margin-bottom: 20px;
+} */
+
+.sidebar ul li a,
+.sidebar ul li button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s all ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+.mainContent {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropDown{
+  width: 100%;
+}
+.dropDownToggle{
+  width: 100%;
+  text-align: left;
+}
+/* Assuming this is part of dashboard.module.css */
+
+/* Main content styling */
+
+
+/* Profile icon container styling */
+.profileIcon {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #ffffff; /* White background for the profile icon */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+/* Profile icon hover effect */
+.profileIcon:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Profile image styling */
+.profileIcon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+/* Profile text styling */
+.profileIcon p {
+  font-size: 14px;
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+}
